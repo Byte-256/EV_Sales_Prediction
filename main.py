@@ -1,16 +1,13 @@
+import pandas as pd
 # import kagglehub
 
 # # Download latest version
-# path = kagglehub.dataset_download("jainaru/electric-car-sales-2010-2024")
-
+# path = kagglehub.dataset_download("patricklford/global-ev-sales-2010-2024")
 # print("Path to dataset files:", path)
-#
-import numpy as np
-import pandas as pd
 
 def main():
-    data = pd.read_csv('./EV_2010-2025.csv')
-    print("Hello from ml!")
+    data = pd.read_csv("data/IEA_Global_EV_Data_2024.csv")
+    print(data.head(2))
     print(data.info())
 
 
